@@ -1,7 +1,8 @@
 import sys
+import os
 import numpy as np
 from nltk import sent_tokenize
-sys.path.append("..")
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from metric.scorer import UniEvaluator
 from utils import add_question, print_scores
 
