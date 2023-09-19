@@ -1,8 +1,8 @@
 import sys
 import numpy as np
 from nltk import sent_tokenize
-from metric.scorer import UniEvaluator
 sys.path.append("..")
+from metric.scorer import UniEvaluator
 from utils import add_question, print_scores
 
 class SumEvaluator:
