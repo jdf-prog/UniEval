@@ -2,9 +2,8 @@ import sys
 import os
 import numpy as np
 from nltk import sent_tokenize
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from metric.scorer import UniEvaluator
-from utils import add_question, print_scores
+from unieval.metric.scorer import UniEvaluator
+from unieval.utils import add_question, print_scores
 
 class SumEvaluator:
     def __init__(self, max_length=1024, device='cuda:0', cache_dir=None):
